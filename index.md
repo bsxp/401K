@@ -1,37 +1,47 @@
-## Welcome to GitHub Pages
+# Material UI 401(k) Calculator
 
-You can use the [editor on GitHub](https://github.com/chris-a-porter/401K/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+This 401(k) Calculator is designed to help you accurately predict your 401(k) value at retirement.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+![401(k) calculator demo](401kanim.gif)
 
-### Markdown
+This tool was created using several libraries, including:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Create-React-App
+```npm install --save create-react-app```
 
-```markdown
-Syntax highlighted code block
+Material UI
+```npm install --save @material-ui/core```
 
-# Header 1
-## Header 2
-### Header 3
+React Number Format
+```npm install --save react-number-format```
 
-- Bulleted
-- List
+React chart-js-2 & Chart.js
+```npm install --save react-chartjs-2 chart.js```
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+## Usage
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Adjust each of the paramter sliders to match your current 401K trajectory:
 
-### Jekyll Themes
+__Employee parameters__
+- Percentage of pre-tax annual income to contribute
+- Annual pre-tax income
+- Expected annual salary increase
+- Current age
+- Expected age of retirement
+- Current 401(k) balance
+- Annual rate of return
+    - Lower rate of return = lower risk tolerance
+    - Higher rate of return = higher risk tolerance
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/chris-a-porter/401K/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+__Employer parameters__
+- Employer contribution % match
+- Employee salary % match cap
 
-### Support or Contact
+## Contributing
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. Please make sure to test all changes locally before submitting a pull request.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
